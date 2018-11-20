@@ -1,4 +1,16 @@
-.text {
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     font-size: 50px;
-    color: red;
+    color: #fff;
+    line-height: 300px;
+    text-align: center;
+    background: linear-gradient(to bottom left, #292929, #cecece);
 }

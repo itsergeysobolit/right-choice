@@ -73,7 +73,7 @@ gulp.task('processFonts', function () {
 gulp.task('processStyles', function () {
   return gulp.src(stylesBlob)
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('styles.css'))
+    .pipe(concat('main.css'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
     }))
