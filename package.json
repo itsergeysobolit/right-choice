@@ -7,7 +7,7 @@
   },
   "author": "Serhii Sobol & Serhii Husak",
   "license": "ISC",
-  "description": "",
+  "description": "> This work has been started [Link](https://itsergeysobolit.github.io/right-choice/)",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
@@ -17,5 +17,13 @@
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsergeysobolit/right-choice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsergeysobolit/right-choice/issues"
+  },
+  "homepage": "https://github.com/itsergeysobolit/right-choice#readme"
 }
