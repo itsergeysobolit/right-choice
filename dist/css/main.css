@@ -2001,6 +2001,7 @@ body * {
   padding: 0; }
 
 .logo {
+  margin: 21px auto;
   width: 300px;
   height: 300px;
   border-radius: 50%;
