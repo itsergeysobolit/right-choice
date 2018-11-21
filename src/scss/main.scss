@@ -1,3 +1,11 @@
+@import "libs";
+@import "vars";
+@import "_mixins/ellipsis";
+@import "_mixins/ripple";
+@import "_mixins/box-shadows";
+@import "_components/button";
+@import "_components/card";
+
 body * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +13,7 @@ body * {
 }
 
 .logo {
+    margin: 21px auto;
     width: 300px;
     height: 300px;
     border-radius: 50%;
