@@ -1,0 +1,27 @@
+.button {
+	text-transform: uppercase;
+	padding: 9px 49px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none !important;
+	
+	@include with-ripple($fbc-1, $fbc-2);
+
+	&_colored {
+		color: #328afb;
+		@include with-ripple($cbc-1, $cbc-2);
+	}
+	&_disabled {
+		color: #a8a8a8;
+		background-color: #eaeaea;
+	}
+	&_card {
+		padding: 9px 9px;
+	}
+	&_no-upper {
+		text-transform: none;
+		padding: 9px 20px;
+	}
+}
+
