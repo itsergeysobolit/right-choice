@@ -20,7 +20,7 @@ gulp.task('default', function () {
 gulp.task('build', function () {
   return runSequence(
     'cleanDist',
-    ['processStyles', 'processHtml', 'processImages', 'processFonts']
+    ['processStyles', 'processHtml', 'processImages', 'processFonts', 'js']
   );
 });
 
@@ -78,6 +78,19 @@ gulp.task('processStyles', function () {
       browsers: ['last 2 versions']
     }))
     .pipe(gulp.dest(`${distDirectory}/css`));
+});
+
+
+//если хочешь добавить библиотеку, пишешь ее на верх в gulp.src
+gulp.task('js', function() {
+  return gulp.src([
+    'src/libs/jquery/dist/jquery.min.js',
+    'src/js/common.js', // Always at the end
+    ])
+  .pipe(concat('scripts.min.js'))
+  // .pipe(uglify()) // Mifify js (opt.)
+  .pipe(gulp.dest('dist/js'))
+  .pipe(browserSync.stream())
 });
 
 gulp.task('reloadBrowser', function (done) {
