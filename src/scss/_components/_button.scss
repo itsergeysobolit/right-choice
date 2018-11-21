@@ -23,5 +23,32 @@
 		text-transform: none;
 		padding: 9px 20px;
 	}
+	&_shadow {
+		@include box-shadow-1l  
+	}
+	&_blue {
+		color: #fff;
+		background-color: #4285f4;
+		@include with-ripple($cbc-1, $cbc-2);
+	}
 }
 
+.buttons__title {
+	color: #5265a2;
+	font-size: 24px;
+	margin-bottom: 84px;
+}
+.buttons__subtitle {
+	font-size: 16px;
+	margin-bottom: 28px;
+}
+.buttons__flat {
+	margin-bottom: 92px;
+	display: flex;
+	justify-content: space-between;
+}
+.buttons__raised {
+	margin-bottom: 58px;
+	display: flex;
+	justify-content: space-between;	
+}
