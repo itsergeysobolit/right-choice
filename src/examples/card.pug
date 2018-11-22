@@ -1,5 +1,3 @@
-include button 
-
 mixin card
     .card
         block
@@ -29,47 +27,26 @@ mixin card__footer_without-line
         block
 
 
-+card
++card#card
     +card__content Cards are a convenient means of displaying content composed of different types of objects.
     +card__footer_without-line
-        +button({
-            label: 'Hurray!',
-            classes: 'button_no-upper'
-        })
+        button.button.button_no-upper Hurray!
 
 +card
     +card__header Card headline title
     +card__content Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo.
     +card__footer
-        +button({
-            label: 'more info...',
-            classes: 'button_card'
-        })
+        button.button.button_card more info...
         +card__footer-buttons
-            +button({
-                label: 'decline',
-                classes: 'button_card'
-            })
-            +button({
-                label: 'accept',
-                classes: 'button_colored button_card'
-            })
+            button.button.button_card decline
+            button.button.button_card.button_colored accept
 
 +card
     +card__header_with-image Card with image header
     +card__content Lorem ipsum dolor sit amet, doming noster at quo, nostrud lucilius rationibus ea duo.
     +card__footer
-        +button({
-            label: 'more info...',
-            classes: 'button_card'
-        })
+        .button.button_card more info...
         +card__footer-buttons
-            +button({
-                label: 'decline',
-                classes: 'button_card'
-            })
-            +button({
-                label: 'accept',
-                classes: 'button_colored button_card'
-            })
+            button.button.button_card decline
+            button.button.button_card.button_colored accept
 

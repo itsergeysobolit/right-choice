@@ -1953,6 +1953,49 @@ html {
   .button_no-upper {
     text-transform: none;
     padding: 9px 20px; }
+  .button_shadow {
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16); }
+  .button_blue {
+    color: #fff;
+    background-color: #4285f4;
+    background-position: center;
+    -webkit-transition: background 0.8s;
+    transition: background 0.8s; }
+    .button_blue:hover {
+      background: #c8e0fe radial-gradient(circle, transparent 1%, #c8e0fe 1%) center/15000%; }
+    .button_blue:active {
+      background-color: #4b98fb;
+      background-size: 100%;
+      -webkit-transition: background 0s;
+      transition: background 0s; }
+
+.buttons__title {
+  color: #5265a2;
+  font-size: 24px;
+  margin-bottom: 84px; }
+
+.buttons__subtitle {
+  font-size: 16px;
+  margin-bottom: 28px; }
+
+.buttons__flat {
+  margin-bottom: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.buttons__raised {
+  margin-bottom: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .card {
   width: 432px;
@@ -1998,7 +2041,9 @@ body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333; }
 
 .logo {
   margin: 21px auto;
