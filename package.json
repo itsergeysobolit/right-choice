@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/itsergeysobolit/right-choice/issues"
   },
-  "homepage": "https://github.com/itsergeysobolit/right-choice#readme"
+  "homepage": "https://github.com/itsergeysobolit/right-choice#readme",
+  "dependencies": {}
 }
