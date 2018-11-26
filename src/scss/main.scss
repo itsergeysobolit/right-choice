@@ -1,5 +1,8 @@
-@import "libs";
 @import "vars";
+@import "header";
+@import "base";
+@import "sidebar";
+@import "content";
 @import "_mixins/ellipsis";
 @import "_mixins/ripple";
 @import "_mixins/box-shadows";
@@ -12,16 +15,4 @@ body * {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
-}
-
-.logo {
-    margin: 21px auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    font-size: 50px;
-    color: #fff;
-    line-height: 300px;
-    text-align: center;
-    background: linear-gradient(to bottom left, #292929, #cecece);
 }

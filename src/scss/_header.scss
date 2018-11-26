@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    position: fixed;
+    background-color: gray;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+
+    &__logo {
+        flex-basis: 300px;
+        background-color: aquamarine;
+    }
+
+    &__title {
+        flex-basis: 100%;
+    }
+}
