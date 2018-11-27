@@ -36,6 +36,7 @@
 .buttons__title {
 	color: #5265a2;
 	font-size: 24px;
+	font-weight: normal;
 	margin-bottom: 84px;
 }
 .buttons__subtitle {
@@ -51,4 +52,86 @@
 	margin-bottom: 58px;
 	display: flex;
 	justify-content: space-between;	
+}
+.button__icons {
+	margin-bottom: 51px;
+}
+
+.icons {
+	&__buttons {
+		padding-left: 30px;
+		display: flex;
+		align-items: center;
+		height: 40px;
+		.icons__buttons-subtitle {
+			margin-right: 30px;
+			font-weight: normal;
+			font-size: 16px;
+		}
+	}
+	&__styled {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		padding-left: 75px;
+		margin-top: 38px;
+		.icons__styled-subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			margin: 0 30px 0 0;
+		}
+	}
+	&__segmented {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		padding-left: 35px;
+		margin-top: 38px;
+		.icons__segmented-subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			margin: 0 30px 0 0;
+		}
+	}
+}
+
+
+//icon settings
+
+.icon:not(:last-of-type){
+	margin-right: 5px;
+}
+.icon {
+	color: #757575;
+	font-size: 20px;
+	display: flex;
+	height: 40px;
+	width: 40px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%; 
+	transition: all .25s ease;
+	cursor: pointer;
+	&_black {
+		color: #000;
+	}
+	&_red {
+		color: #e91e63;
+	}
+	&_non-br {
+		border-radius: 0;
+	}
+	&_hover-black {
+		&:hover {
+			color: #000;
+		}
+	}
+	&:hover {
+		background-color: #f3f3f3;
+	}
+}
+
+.wrapper_buttons {
+	max-width: 600px;
+	margin: 0;
 }
