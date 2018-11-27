@@ -6,17 +6,19 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Right-choice
         link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+        link(href='https://fonts.googleapis.com/css?family=Sedgwick+Ave', rel='stylesheet')
+
         link(rel="stylesheet", href="css/main.css")
     body
-    header.header
-        .header__logo
-            //- img(src="./img/header-logo.png", alt="")
-        h1.header__title Right-choice
+        header.header.clearfix
+            .header__logo rc
+            h1.header__title
 
-    main.base
-        .sidebar
-        .content
-            include examples/buttons
-            include examples/card
+        main.base.clearfix
+            include examples/sidebar
+            .content.clearfix
+                include examples/buttons
+                include examples/card
+        //- footer.footer
 
-    script(src='js/scripts.min.js')
+        script(src='js/scripts.min.js')

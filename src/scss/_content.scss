@@ -1,5 +1,8 @@
 .content {
-    flex-basis: 100%;
+    width: 80%;
+    float: right;
     height: auto;
-    background-color: bisque;
+    background-color: lighten($color: $base-color, $amount: 80);
+    padding-top: 5%;
+    padding-left: 5%;
 }
