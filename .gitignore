@@ -1,2 +1,7 @@
 /node_modules/
-package-lock.json
+/**/package-lock.json
+/dist/
+/.git/
+.settings/
+.vscode/
+/**/*.DS_Store

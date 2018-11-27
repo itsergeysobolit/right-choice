@@ -1,5 +1,33 @@
 .sidebar {
-    flex-basis: 300px;
-    height: 200px;
-    background-color: red;
+    width: 20%;
+    float: left;
+    height: auto;
+    position: fixed;
+    background-color: $base-color;
+
+    .menu {
+        list-style-type: none;
+
+        &__item {
+            text-decoration: none;
+            padding: 10% 10%;
+            display: block;
+            transition: ease .5s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($color: $base-color, $amount: 5);
+                padding-left: 15%;
+                border-left: 4px solid lighten($color: $base-color, $amount: 50);
+            }
+
+            &:active {
+                background-color: darken($color: $base-color, $amount: 5);
+            }
+
+            &-content {
+                color: #ffffff;
+            }
+        }
+    }
 }
