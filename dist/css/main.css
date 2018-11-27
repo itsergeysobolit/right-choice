@@ -120,6 +120,7 @@
 .buttons__title {
   color: #5265a2;
   font-size: 24px;
+  font-weight: normal;
   margin-bottom: 84px; }
 
 .buttons__subtitle {
@@ -143,6 +144,89 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.button__icons {
+  margin-bottom: 51px; }
+
+.icons__buttons {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px; }
+  .icons__buttons .icons__buttons-subtitle {
+    margin-right: 30px;
+    font-weight: normal;
+    font-size: 16px; }
+
+.icons__styled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  padding-left: 75px;
+  margin-top: 38px; }
+  .icons__styled .icons__styled-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 30px 0 0; }
+
+.icons__segmented {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  padding-left: 35px;
+  margin-top: 38px; }
+  .icons__segmented .icons__segmented-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 30px 0 0; }
+
+.icon:not(:last-of-type) {
+  margin-right: 5px; }
+
+.icon {
+  color: #757575;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  cursor: pointer; }
+  .icon_black {
+    color: #000; }
+  .icon_red {
+    color: #e91e63; }
+  .icon_non-br {
+    border-radius: 0; }
+  .icon_hover-black:hover {
+    color: #000; }
+  .icon:hover {
+    background-color: #f3f3f3; }
+
+.wrapper_buttons {
+  max-width: 600px;
+  margin: 0; }
 
 .card {
   width: 432px;
@@ -206,3 +290,7 @@ body * {
   content: "";
   clear: both;
   display: table; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 835px; }
