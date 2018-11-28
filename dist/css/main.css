@@ -221,12 +221,57 @@
     border-radius: 0; }
   .icon_hover-black:hover {
     color: #000; }
+  .icon_big-size {
+    width: 56px;
+    height: 56px; }
+  .icon_red-bg {
+    background-color: #e91e63; }
+  .icon_white-color {
+    color: #fff; }
+  .icon_shadow {
+    -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .icon_blue-bg {
+    background-color: #4285f4; }
   .icon:hover {
     background-color: #f3f3f3; }
 
 .wrapper_buttons {
   max-width: 600px;
   margin: 0; }
+
+.with-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 56px; }
+
+.floating__title {
+  color: #5265a2;
+  font-size: 24px;
+  font-weight: normal; }
+
+.deal {
+  margin-right: 78px; }
+
+.deal__title {
+  color: #5265a2;
+  font-size: 24px;
+  font-weight: normal; }
+
+.regular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 256px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px;
+  margin-left: 24px; }
 
 .card {
   width: 432px;
