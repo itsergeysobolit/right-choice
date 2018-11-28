@@ -126,6 +126,22 @@
 			color: #000;
 		}
 	}
+	&_big-size {
+		width: 56px;
+		height: 56px;
+	}
+	&_red-bg {
+		background-color: #e91e63;
+	}
+	&_white-color {
+		color: #fff;
+	}
+	&_shadow {
+		@include  box-shadow-2l;
+	}
+	&_blue-bg {
+		background-color: #4285f4;
+	}
 	&:hover {
 		background-color: #f3f3f3;
 	}
@@ -134,4 +150,36 @@
 .wrapper_buttons {
 	max-width: 600px;
 	margin: 0;
+}
+
+//floation action buttons
+
+.with-bg {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 56px;
+}
+
+.floating__title {
+	color: #5265a2;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+
+.deal {
+	margin-right: 78px;
+}
+
+.deal__title {
+	color: #5265a2;
+	font-size: 24px;
+	font-weight: normal;
+}
+.regular {
+	display: flex;
+	max-width: 256px;
+	justify-content: space-between;
+	margin-top: 45px;
+	margin-left: 24px;
 }
