@@ -226,6 +226,8 @@
     height: 56px; }
   .icon_red-bg {
     background-color: #e91e63; }
+    .icon_red-bg:hover {
+      background-color: #c1134e !important; }
   .icon_white-color {
     color: #fff; }
   .icon_shadow {
@@ -233,6 +235,20 @@
             box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .icon_blue-bg {
     background-color: #4285f4; }
+    .icon_blue-bg:hover {
+      background-color: #1266f1 !important; }
+  .icon_green-bg {
+    background-color: #259b24; }
+    .icon_green-bg:hover {
+      background-color: #1b721a !important; }
+  .icon_purple-bg {
+    background-color: #673ab7; }
+    .icon_purple-bg:hover {
+      background-color: #512e90 !important; }
+  .icon_orange-bg {
+    background-color: #f54a29; }
+    .icon_orange-bg:hover {
+      background-color: #e12d0a !important; }
   .icon:hover {
     background-color: #f3f3f3; }
 
@@ -262,7 +278,7 @@
   font-size: 24px;
   font-weight: normal; }
 
-.regular {
+.regular__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -270,8 +286,51 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 45px;
   margin-left: 24px; }
+
+.regular__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 45px 0 20px; }
+
+.mini__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 190px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 24px; }
+
+.mini__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  margin: 24px 0 13px; }
+
+.deal__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .deal__title .icon:not(last-of-type) {
+    margin-bottom: 12px;
+    margin-top: 10px; }
+
+.deal__menu-items {
+  display: none; }
+
+.display-block {
+  display: block !important; }
 
 .card {
   width: 432px;

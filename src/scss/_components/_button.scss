@@ -132,6 +132,9 @@
 	}
 	&_red-bg {
 		background-color: #e91e63;
+		&:hover {
+			background-color: darken(#e91e63, 10%) !important;
+		}
 	}
 	&_white-color {
 		color: #fff;
@@ -141,6 +144,27 @@
 	}
 	&_blue-bg {
 		background-color: #4285f4;
+		&:hover {
+			background-color: darken(#4285f4, 10%) !important;
+		}
+	}
+	&_green-bg {
+		background-color: #259b24;
+		&:hover {
+			background-color: darken(#259b24, 10%) !important;
+		}
+	}
+	&_purple-bg {
+		background-color: #673ab7;
+		&:hover {
+			background-color: darken(#673ab7, 10%) !important;
+		}
+	}
+	&_orange-bg {
+		background-color: #f54a29;
+		&:hover {
+			background-color: darken(#f54a29, 10%) !important;
+		}
 	}
 	&:hover {
 		background-color: #f3f3f3;
@@ -176,10 +200,43 @@
 	font-size: 24px;
 	font-weight: normal;
 }
-.regular {
+.regular__wrapper {
 	display: flex;
 	max-width: 256px;
 	justify-content: space-between;
-	margin-top: 45px;
 	margin-left: 24px;
+}
+.regular__subtitle {
+	font-weight: normal;
+	font-size: 16px;
+	margin: 45px 0 20px;
+}
+
+.mini__wrapper {
+	display: flex;
+	max-width: 190px;
+	justify-content: space-between;
+	margin-left: 24px;
+}
+.mini__subtitle {
+	font-weight: normal;
+	font-size: 16px;
+	margin: 24px 0 13px;
+}
+
+.deal__title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.icon:not(last-of-type) {
+		margin-bottom: 12px;
+		margin-top: 10px;
+	}
+}
+.deal__menu-items {
+	display: none;
+}
+.display-block {
+	display: block !important;
 }
