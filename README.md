@@ -53,7 +53,6 @@ right-choice/
 │    │    │    ├── _card.scss
 │    │    ├── _mixins/
 │    │    │    ├── _ellipsis.scss
-│    │    │    ├── _font-face.scss
 │    │    │    ├── _ripple.scss
 │    │    │    ├── _shadow.scss
 │    │    ├── _base.scss
