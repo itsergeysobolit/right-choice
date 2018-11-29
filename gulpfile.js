@@ -13,6 +13,7 @@ const imagesBlob = 'src/img/**';
 const fontsBlob = 'src/fonts/**';
 const stylesBlob = 'src/**/*.scss';
 
+
 gulp.task('default', function () {
   return runSequence('build', 'serve');
 });
@@ -20,7 +21,7 @@ gulp.task('default', function () {
 gulp.task('build', function () {
   return runSequence(
     'cleanDist',
-    ['processStyles', 'processHtml', 'processImages', 'processFonts', 'js']
+    ['processStyles', 'processHtml', 'processImages', 'processFonts', 'processScripts']
   );
 });
 
@@ -45,6 +46,9 @@ gulp.task('serve', function () {
 
   gulp.watch(stylesBlob, function () {
     return runSequence('processStyles', 'reloadBrowser');
+  });
+  gulp.watch(['libs/**/*.js', 'src/js/common.js'], function () {
+    return runSequence('processScripts', 'reloadBrowser')
   });
 });
 
@@ -82,7 +86,7 @@ gulp.task('processStyles', function () {
 
 
 //если хочешь добавить библиотеку, пишешь ее на верх в gulp.src
-gulp.task('js', function() {
+gulp.task('processScripts', function() {
   return gulp.src([
     'src/libs/jquery/dist/jquery.min.js',
     'src/js/common.js', // Always at the end
@@ -90,7 +94,6 @@ gulp.task('js', function() {
   .pipe(concat('scripts.min.js'))
   // .pipe(uglify()) // Mifify js (opt.)
   .pipe(gulp.dest('dist/js'))
-  .pipe(browserSync.stream())
 });
 
 gulp.task('reloadBrowser', function (done) {
