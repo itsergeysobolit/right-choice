@@ -45,6 +45,9 @@
 			border-bottom: 2px solid #00bcd7;
 		}
 	}
+	&_small {
+		padding: 14px 65px;
+	}
 }
 
 .tabs__noink-items {
@@ -72,4 +75,36 @@
 .tabs__inky-items {
 	margin-bottom: 30px;
 }
+.tabs__menu {
+	background-color: #00bcd7;
+	opacity: .6;
+	padding: 23px 0 0;
+	max-width: 770px;
+	position: relative;
+}
+.tabs__menu-head {
+	display: flex;
+	padding-bottom: 23px;
+}
+.tabs__menu-head-left {
+	display: flex;
+	align-items: center;
+	margin-left: 24px;
+	i {
+		margin-right: 24px;
+	}
+}
+.tabs__menu-head-left-title {
+	color: #fff;
+	font-size: 18px;
+}
+.tabs__menu-head-right {
+	position: absolute;
+	right: 0;
+	display: flex; 
+	margin-right: 24px;
+}
+.tabs__menu-content {
 
+	display: none;
+}

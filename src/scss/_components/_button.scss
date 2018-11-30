@@ -169,6 +169,14 @@
 	&:hover {
 		background-color: #f3f3f3;
 	}
+	&_no-hover {
+		width: 30px;
+		height: 30px;
+		&:hover {
+			opacity: .8;
+			background: none;
+		}
+	}
 }
 
 .wrapper_buttons {
