@@ -476,6 +476,8 @@
     border-bottom: 2px solid #00bcd7; }
   .tab_small {
     padding: 14px 65px; }
+  .tab_very-small {
+    padding: 14px 18px; }
 
 .tabs__noink-items {
   margin-bottom: 54px; }
@@ -539,6 +541,22 @@
 
 .tabs__menu-content {
   display: none; }
+
+.tabs__bar {
+  background-color: #00bcd7;
+  opacity: .6;
+  max-width: 770px;
+  margin-top: 37px;
+  padding-top: 144px;
+  padding-left: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tabs__bar i {
+    margin-right: 23px; }
 
 body {
   margin: 0;

@@ -48,6 +48,9 @@
 	&_small {
 		padding: 14px 65px;
 	}
+	&_very-small {
+		padding: 14px 18px;
+	}
 }
 
 .tabs__noink-items {
@@ -105,6 +108,18 @@
 	margin-right: 24px;
 }
 .tabs__menu-content {
-
 	display: none;
+}
+.tabs__bar {
+	background-color: #00bcd7;
+	opacity: .6;
+	max-width: 770px;
+	margin-top: 37px;
+	padding-top: 144px;
+	padding-left: 67px;
+	display: flex;
+	justify-content: space-between;
+	i{
+		margin-right: 23px;
+	}
 }
