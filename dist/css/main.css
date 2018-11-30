@@ -1,3 +1,65 @@
+/** NOTE: When this is updated, refresh ripple.js' minified version. */
+/**
+ * contains a ripple. Will normally grow to fixed size (200px/200px), not
+ * related to the holder itself.
+ */
+.rippleJS {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  /** Forces webkit to properly contain content within border-radius. */
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+
+/** adds default border-radius */
+.rippleJS.fill::after {
+  /** allows webkit/blink to tap on corners */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ""; }
+
+.rippleJS.fill {
+  border-radius: 1000000px;
+  /** "large" number, but not 100% */ }
+
+.rippleJS .ripple {
+  position: absolute;
+  border-radius: 100%;
+  background: yellow;
+  opacity: 0.2;
+  width: 0;
+  height: 0;
+  /** only animate transform and opacity */
+  -webkit-transition: -webkit-transform 0.4s ease-out, opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  transition: opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  /** initially hidden */
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.rippleJS .ripple.held {
+  opacity: 0.4;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.rippleJS .ripple.done {
+  opacity: 0.0; }
+
 .header {
   position: fixed;
   background-color: #1a1a1a;
@@ -251,6 +313,12 @@
       background-color: #e12d0a !important; }
   .icon:hover {
     background-color: #f3f3f3; }
+  .icon_no-hover {
+    width: 30px;
+    height: 30px; }
+    .icon_no-hover:hover {
+      opacity: .8;
+      background: none; }
 
 .wrapper_buttons {
   max-width: 600px;
@@ -369,6 +437,127 @@
 .card__footer_without-line {
   padding: 0 20px 0; }
 
+.tabs {
+  padding: 18px 0 103px; }
+
+.tabs__title {
+  font-size: 24px;
+  color: #5265a2;
+  font-weight: normal;
+  margin-bottom: 66px; }
+
+.tab {
+  opacity: 0.6;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #00bcd7;
+  border: none;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px 96px;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  position: relative;
+  outline: none; }
+  .tab_yellow-hover:hover {
+    color: #ffff8d; }
+  .tab_border:hover {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), inset 0 -2px 0 0 #ffff8d;
+            box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), inset 0 -2px 0 0 #ffff8d;
+    color: white; }
+  .tab_white-bg {
+    background-color: #fff;
+    color: #00bcd7;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .tab_white-bg .rippleJS .ripple {
+      background: #00bcd7 !important; }
+  .tab_border-blue:hover {
+    border-bottom: 2px solid #00bcd7; }
+  .tab_small {
+    padding: 14px 65px; }
+  .tab_very-small {
+    padding: 14px 18px; }
+
+.tabs__noink-items {
+  margin-bottom: 54px; }
+
+.tabs__noink-subtitle {
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 16px; }
+
+.tabs__slides-subtitle {
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 16px; }
+
+.tabs__slides-items {
+  margin-bottom: 54px; }
+
+.tabs__inky-subtitle {
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 16px; }
+
+.tabs__inky-items {
+  margin-bottom: 30px; }
+
+.tabs__menu {
+  background-color: #00bcd7;
+  opacity: .6;
+  padding: 23px 0 0;
+  max-width: 770px;
+  position: relative; }
+
+.tabs__menu-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 23px; }
+
+.tabs__menu-head-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 24px; }
+  .tabs__menu-head-left i {
+    margin-right: 24px; }
+
+.tabs__menu-head-left-title {
+  color: #fff;
+  font-size: 18px; }
+
+.tabs__menu-head-right {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 24px; }
+
+.tabs__menu-content {
+  display: none; }
+
+.tabs__bar {
+  background-color: #00bcd7;
+  opacity: .6;
+  max-width: 770px;
+  margin-top: 37px;
+  padding-top: 144px;
+  padding-left: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tabs__bar i {
+    margin-right: 23px; }
+
 body {
   margin: 0;
   padding: 0;
@@ -395,3 +584,65 @@ body * {
 .wrapper {
   margin: 0 auto;
   max-width: 835px; }
+
+/** NOTE: When this is updated, refresh ripple.js' minified version. */
+/**
+ * contains a ripple. Will normally grow to fixed size (200px/200px), not
+ * related to the holder itself.
+ */
+.rippleJS {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  /** Forces webkit to properly contain content within border-radius. */
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+
+/** adds default border-radius */
+.rippleJS.fill::after {
+  /** allows webkit/blink to tap on corners */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: ""; }
+
+.rippleJS.fill {
+  border-radius: 1000000px;
+  /** "large" number, but not 100% */ }
+
+.rippleJS .ripple {
+  position: absolute;
+  border-radius: 100%;
+  background: yellow;
+  opacity: 0.2;
+  width: 0;
+  height: 0;
+  /** only animate transform and opacity */
+  -webkit-transition: -webkit-transform 0.4s ease-out, opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  transition: opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  /** initially hidden */
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.rippleJS .ripple.held {
+  opacity: 0.4;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.rippleJS .ripple.done {
+  opacity: 0.0; }
