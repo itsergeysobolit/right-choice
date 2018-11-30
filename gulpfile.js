@@ -88,6 +88,7 @@ gulp.task('processStyles', function () {
 //если хочешь добавить библиотеку, пишешь ее на верх в gulp.src
 gulp.task('processScripts', function() {
   return gulp.src([
+    'src/libs/rippleJS-master/ripple.min.js',
     'src/libs/jquery/dist/jquery.min.js',
     'src/js/common.js', // Always at the end
     ])

@@ -37,12 +37,16 @@ right-choice/
 │    │    ├── buttons.pug
 │    │    ├── card.pug
 │    │    ├── sidebar.pug
+│    │    ├── tabs.pug
 │    ├── img/
 │    │    
 │    ├── js/
 │    │    ├── common.js
 │    │    ├── scripts.min.js
 │    ├── libs/
+│    │    ├── rippleJS-master/
+│    │    │    ├── ripple.min.js
+│    │    │    ├── ripple.scss
 │    │    ├── jquery/
 │    │    │    ├── dist/
 │    │    │    │    ├── jquery.min.js
@@ -51,6 +55,7 @@ right-choice/
 │    │    ├── _components/
 │    │    │    ├── _button.scss
 │    │    │    ├── _card.scss
+│    │    │    ├── _tabs.scss
 │    │    ├── _mixins/
 │    │    │    ├── _ellipsis.scss
 │    │    │    ├── _ripple.scss

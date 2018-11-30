@@ -1,3 +1,4 @@
+@import "../libs/rippleJS-master/ripple.scss"; //ripple lib
 @import "vars";
 @import "header";
 @import "base";
@@ -9,6 +10,7 @@
 @import "_mixins/shadow";
 @import "_components/button";
 @import "_components/card";
+@import "_components/tabs";
 
 body {
     margin: 0;
