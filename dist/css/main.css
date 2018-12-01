@@ -609,6 +609,22 @@
   -webkit-animation: linear 4s linear infinite;
           animation: linear 4s linear infinite; }
 
+.linear:nth-of-type(2):before {
+  -webkit-animation: linear 3s linear infinite;
+          animation: linear 3s linear infinite; }
+
+.linear:nth-of-type(3):before {
+  -webkit-animation: linear 5s linear infinite;
+          animation: linear 5s linear infinite; }
+
+.linear:nth-of-type(4):before {
+  -webkit-animation: linear 2s linear infinite;
+          animation: linear 2s linear infinite; }
+
+.linear:nth-of-type(6):before {
+  -webkit-animation: linear 2s linear infinite;
+          animation: linear 2s linear infinite; }
+
 .linear_pink:before {
   content: "";
   display: block;
