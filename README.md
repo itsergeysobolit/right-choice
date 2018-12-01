@@ -38,6 +38,7 @@ right-choice/
 │    │    ├── card.pug
 │    │    ├── sidebar.pug
 │    │    ├── tabs.pug
+│    │    ├── loaders.pug
 │    ├── img/
 │    │    
 │    ├── js/
@@ -56,6 +57,7 @@ right-choice/
 │    │    │    ├── _button.scss
 │    │    │    ├── _card.scss
 │    │    │    ├── _tabs.scss
+│    │    │    ├── _loaders.scss
 │    │    ├── _mixins/
 │    │    │    ├── _ellipsis.scss
 │    │    │    ├── _ripple.scss
