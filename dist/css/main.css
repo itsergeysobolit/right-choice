@@ -606,8 +606,8 @@
   width: 200px;
   height: 4px;
   background-color: #009e55;
-  -webkit-animation: linear 2s linear infinite;
-          animation: linear 2s linear infinite; }
+  -webkit-animation: linear 4s linear infinite;
+          animation: linear 4s linear infinite; }
 
 .linear_pink:before {
   content: "";
@@ -616,12 +616,12 @@
   width: 200px;
   height: 4px;
   background-color: #e91e63;
-  -webkit-animation: linear 2s linear infinite;
-          animation: linear 2s linear infinite; }
+  -webkit-animation: linear 4s linear infinite;
+          animation: linear 4s linear infinite; }
 
 @-webkit-keyframes linear {
   from {
-    width: 10%; }
+    width: 0%; }
   10% {
     width: 10%; }
   20% {
@@ -645,7 +645,7 @@
 
 @keyframes linear {
   from {
-    width: 10%; }
+    width: 0%; }
   10% {
     width: 10%; }
   20% {

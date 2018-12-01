@@ -48,7 +48,7 @@
 	width: 200px;
 	height: 4px;
 	background-color: #009e55;
-	animation: linear 2s linear infinite;
+	animation: linear 4s linear infinite;
 }
 .linear_pink:before {
 	content: "";
@@ -57,11 +57,11 @@
 	width: 200px;
 	height: 4px;
 	background-color: #e91e63;
-	animation: linear 2s linear infinite;
+	animation: linear 4s linear infinite;
 }
 @keyframes linear {
 	from {
-		width: 10%;
+		width: 0%;
 	}
 	10% {
 		width: 10%;
