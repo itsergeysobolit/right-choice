@@ -39,6 +39,7 @@ right-choice/
 │    │    ├── sidebar.pug
 │    │    ├── tabs.pug
 │    │    ├── loaders.pug
+│    │    ├── lists.pug
 │    ├── img/
 │    │    
 │    ├── js/
@@ -58,6 +59,7 @@ right-choice/
 │    │    │    ├── _card.scss
 │    │    │    ├── _tabs.scss
 │    │    │    ├── _loaders.scss
+│    │    │    ├── _lists.scss
 │    │    ├── _mixins/
 │    │    │    ├── _ellipsis.scss
 │    │    │    ├── _ripple.scss
