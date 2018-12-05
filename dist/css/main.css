@@ -987,7 +987,8 @@ body * {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 835px; }
+  max-width: 835px;
+  position: relative; }
 
 /** NOTE: When this is updated, refresh ripple.js' minified version. */
 /**
