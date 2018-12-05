@@ -892,6 +892,15 @@ input[type="checkbox"] {
   width: 18px;
   border-radius: 3px; }
 
+.checkboxes__item .label-checkbox:before {
+  border: 1px solid #009688;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  height: 18px;
+  width: 18px;
+  border-radius: 3px; }
+
 .lists__checkbox-secondary .label-checkbox {
   margin-left: 47px; }
 
@@ -961,6 +970,25 @@ input[type=checkbox] + .label-checkbox:before {
 
 .label-green {
   background-color: #009688; }
+
+.checkboxes {
+  padding: 18px 0 78px; }
+  .checkboxes .label-checkbox {
+    margin-left: 50px;
+    font-weight: 700; }
+
+.checkboxes__title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #5265a2;
+  margin-bottom: 65px; }
+
+.checkboxes__item {
+  margin-bottom: 35px; }
+
+.checkboxes__item-desc {
+  margin-left: 50px;
+  margin-top: 21px; }
 
 body {
   margin: 0;

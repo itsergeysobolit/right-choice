@@ -125,6 +125,15 @@ input[type="checkbox"] {
 	width: 18px;
 	border-radius: 3px;
 }
+.checkboxes__item .label-checkbox:before{
+	border: 1px solid #009688;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	height: 18px;
+	width: 18px;
+	border-radius: 3px;
+}
 .lists__checkbox-secondary {
 	.label-checkbox {
 		margin-left: 47px;
