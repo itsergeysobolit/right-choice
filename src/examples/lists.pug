@@ -1,0 +1,40 @@
+a(name="lists")
+section.lists
+	.wrapper
+		h2.lists__title List Heading
+		p.lists__subtitle 3 line item
+		.lists__3-items 
+			.lists__3-items-photo
+			.lists__3-items-desc
+				p.lists__3-items-desc-first First Line
+				p.lists__3-items-desc-second Second line of text
+				p.lists__3-items-desc-third Third line of text
+		p.lists__subtitle 2 line item
+		.lists__2-items
+			.lists__2-items-photo
+			.lists__2-items-desc
+				p.lists__2-items-desc-first First Line
+				p.lists__2-items-desc-second Second line of text
+		p.lists__subtitle Single Action Checkboxes
+		.lists__single-checkbox
+			input(type="checkbox" name="checkbox" id="checkbox" class="checkbox")
+			label(for="checkbox" class="label-checkbox") Label
+		p.lists__subtitle Clickable Items with Secondary Control
+		.lists__clickable-items.checkbox_toggle
+			label(for="checkbox-toggle") Label
+			input(type="checkbox" name="checkbox-toggle" id="checkbox-toggle")
+			label(for="checkbox-toggle" class="label-checkbox-toggle label-green")
+		p.lists__subtitle Checkbox with Secondary Action
+		.lists__checkbox-secondary
+			input(type="checkbox" name="checkbox-secondary" id="checkbox-secondary" class="checkbox")
+			label(for="checkbox-secondary" class="label-checkbox") Label
+			i.fas.fa-comment-alt.icon
+		p.lists__subtitle Avatar with Secondary Action Icon
+		.lists__avatar
+			.lists__avatar-info
+				.lists__avatar-info-photo
+				.lists__avatar-info-name
+					p Firstname Lastname
+			.lists__avatar-comments
+				i.fas.fa-comment-alt.icon
+

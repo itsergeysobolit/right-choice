@@ -12,6 +12,8 @@
 @import "_components/card";
 @import "_components/tabs";
 @import "_components/loaders";
+@import "_components/lists";
+@import "_components/form-buttons";
 
 body {
     margin: 0;
@@ -42,5 +44,6 @@ body * {
 .wrapper {
     margin: 0 auto;
     max-width: 835px;
+    position: relative;
 }
 

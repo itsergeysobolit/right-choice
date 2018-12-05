@@ -1,0 +1,207 @@
+.lists {
+	padding: 17px 16px 41px;
+}
+.lists__title {
+	margin-left: 8px;
+	font-weight: normal;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.lists__subtitle {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 23px;
+}
+.lists__3-items {
+	display: flex;
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	.lists__3-items-photo {
+		background-color: #d8d8d8;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		margin-right: 15px;
+	}
+	.lists__3-items-desc-first {
+		font-size: 16px;
+	}
+	.lists__3-items-desc-second {
+		font-size: 14px;
+		color: #444;
+	}
+	.lists__3-items-desc-third {
+		font-size: 14px;
+		color: #666;
+	}
+}
+.lists__2-items {
+	display: flex;
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	.lists__2-items-photo {
+		background-color: #d8d8d8;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		margin-right: 15px;
+	}
+	.lists__2-items-desc-first {
+		font-size: 16px;
+		margin-bottom: 4.5px;
+	}
+	.lists__2-items-desc-second {
+		font-size: 14px;
+		color: #666;
+	}
+}
+.lists__single-checkbox {
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 15px;
+	margin-bottom: 26px;
+}
+
+.lists__clickable-items {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 15px;
+	margin-bottom: 26px;
+}
+
+.lists__checkbox-secondary {
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 15px;
+	margin-bottom: 26px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.lists__avatar {
+	border-bottom: 2px solid #e0e0e0;
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	.lists__avatar-info {
+		display: flex;
+		align-items: center;
+	}
+	.lists__avatar-info-photo {
+		background-color: #d8d8d8;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		margin-right: 15px;
+	}
+}
+
+//checkbox
+
+input[type="checkbox"] {
+	display: none;
+}
+.label-checkbox, input[type="checkbox"], label {
+	cursor: pointer;
+}
+.lists__single-checkbox .label-checkbox:before{
+	border: 1px solid #009688;
+	display: inline-block;
+	position: absolute;
+	right: 20px;
+	height: 18px;
+	width: 18px;
+	border-radius: 3px;
+}
+.lists__checkbox-secondary .label-checkbox:before{
+	border: 1px solid #009688;
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	border-radius: 3px;
+}
+.checkboxes__item .label-checkbox:before{
+	border: 1px solid #009688;
+	display: inline-block;
+	position: absolute;
+	left: 10px;
+	height: 18px;
+	width: 18px;
+	border-radius: 3px;
+}
+.lists__checkbox-secondary {
+	.label-checkbox {
+		margin-left: 47px;
+	}
+}
+
+input[type=checkbox]:checked + .label-checkbox:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	padding-top: 2px;
+	height: 16px;
+	background-color: #009688;
+	border: 2px solid #009688;
+	color: #fff;
+	text-align: center;
+	line-height: 15px;
+}
+input[type=checkbox] + .label-checkbox:before {
+	content: "";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	background-color: #fff;
+	border: 2px solid #999;
+	text-align: center;
+	line-height: 15px;
+}
+
+
+//checkbox_toggle
+
+.checkbox_toggle input[type="checkbox"] {
+	display: none;
+}
+.checkbox_toggle .label-checkbox-toggle {
+	cursor: pointer;
+	height: 0px;
+	position: relative; 
+	width: 40px; 
+}
+.checkbox_toggle > .label-checkbox-toggle::before {
+	background: rgb(0, 0, 0);
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	content: '';
+	height: 16px;
+	position:absolute;
+	opacity: 0.3;
+	transition: all 0.4s ease-in-out;
+	width: 40px;
+}
+.checkbox_toggle > .label-checkbox-toggle::after {
+	background: rgb(255, 255, 255);
+	border-radius: 16px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+	content: '';
+	height: 24px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	transition: all 0.3s ease-in-out;
+	width: 24px;
+}
+.checkbox_toggle > input[type="checkbox"]:checked + .label-checkbox-toggle::before {
+	background: inherit;
+	opacity: 0.5;
+}
+.checkbox_toggle > input[type="checkbox"]:checked + .label-checkbox-toggle::after {
+	background: inherit;
+	left: 20px;
+}
+.label-green { background-color: #009688; }
