@@ -13,3 +13,31 @@ section.checkboxes
 			input(type="checkbox" id="search" name="search")
 			label(for="search" class="label-checkbox") Clear search
 			p.checkboxes__item-desc Remove all the searches you have ever performed
+section.radio-button
+	.wrapper
+		h2.radio-button__title Radio Button
+		h3.radio-button__subtitle Keep Wi-Fi on during sleep
+		.radio-button__item
+			input(type="radio" class="radio" id="always" name="wifi")
+			label(for="always") Always
+		.radio-button__item
+			input(type="radio" class="radio" id="plugged-in" name="wifi")
+			label(for="plugged-in") Only when plugged in
+		.radio-button__item
+			input(type="radio" class="radio" id="never" name="wifi")
+			label(for="never") Never
+section.switch
+	.wrapper
+		h2.switch__title Switch (Toggle)
+		.switch__item.checkbox_toggle
+			label(for="switch-wifi") Wi-Fi
+			input(type="checkbox" name="switch-wifi" id="switch-wifi")
+			label(for="switch-wifi" class="label-checkbox-toggle label-green")
+		.switch__item.checkbox_toggle
+			label(for="switch-bluetooth") Bluetooth
+			input(type="checkbox" name="switch-bluetooth" id="switch-bluetooth")
+			label(for="switch-bluetooth" class="label-checkbox-toggle label-green")
+		.switch__item.checkbox_toggle
+			label(for="switch-airplane") Airplane Mode
+			input(type="checkbox" name="switch-airplane" id="switch-airplane")
+			label(for="switch-airplane" class="label-checkbox-toggle label-green")
